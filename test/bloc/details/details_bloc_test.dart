@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages, override_on_non_overriding_member
+
 import 'dart:convert';
 
 import 'package:mocktail/mocktail.dart';

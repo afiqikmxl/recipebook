@@ -59,8 +59,6 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   void initState() {
     super.initState();
-    print("THE ID");
-    print(widget.id!);
     bloc.add(widget.type == 'food' ? GetMealsIngredientEvent(widget.id!) : GetDrinksIngredientEvent(widget.id!));
   }
 
@@ -195,7 +193,6 @@ class _DetailsPageState extends State<DetailsPage> {
 
   detailsWidget(bool isFood, {DetailsMealIngredientModel? data, DetailsDrinkIngredientModel? drinkData}) {
     var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
     return Positioned(
       bottom: 0,
       left: 0,
